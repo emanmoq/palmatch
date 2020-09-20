@@ -35,6 +35,9 @@ header{
 .navbar-brand{
     width:166px;
 }
+.signInSection{
+    float:right;
+}
 .SignIn.btn{
     background-color:white;
     border-radius: 50px;
@@ -43,6 +46,7 @@ header{
     color:#F5BB16;
     font-size:.875em;
     text-align: center;
+    margin-left:8px;
 }
 .SignIn.btn:hover{
     background: linear-gradient(45deg,#FFE95D, #FEB938);
@@ -196,6 +200,7 @@ border:1px solid #E5E5E5;
 }
 .getMembership {
     margin-top:22px;
+    float:right;
 }
 .counters{
 margin-top:50px;
@@ -293,4 +298,163 @@ width:278px;
 .joinLink{
     font-size:1.250em;
     color:#F5BB16;
+}
+.Features{
+    padding-top:130px;
+    padding-bottom:170px;
+}
+.Features .title h4{
+    font-size:3.125em;
+}
+.Features .title p{
+    margin-bottom:40px;
+    font-size:1.375em;
+}
+.listContainer{
+    position: relative;
+    margin-top:112px;
+}
+.rightFeature{
+    position: absolute;width:40%;
+    left:0;
+    top:0;
+    height:auto;
+    background-image:linear-gradient(45deg ,#00C4FF,#0086AE);
+    height:100%;;
+    opacity:20%;
+}
+.freeCirecle{
+position: absolute;
+ background-image:linear-gradient(rgba(254, 185, 56, .5),rgba(255, 233, 93, .5));
+ width:203px;
+ height:203px;
+ border-radius: 50%;
+ left: 33%;
+ top: 35%;
+ padding:15px;
+ z-index: 22;
+ 
+}
+.featureIcon{
+    width:80px;
+    display: inline-block;
+    margin-right:30px;
+    float: left;
+    margin-top: 20px;
+
+}
+.featureContent{
+    display: inline-block;
+}
+.featrureList li{
+    padding-bottom:40px;
+  padding-top:35px;
+}
+.featrureList li:first-child{
+  
+  padding-top:0;
+}
+.featrureList hr{
+background-color: #707070;
+opacity: 20%;
+margin-left:50px;
+width:100%;
+height:1px;
+}
+.textBackground{
+    background-image:linear-gradient(to bottom ,#F5BB16, #FFE95D); 
+    width:173px;
+    height: 173px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 11;
+    text-align: center;
+    padding-top:40px;
+}
+.textBackground span{
+font-size:0.938em;
+color:white;
+
+}
+.textBackground p{
+font-size:2.000em;
+color:white;
+font-weight: bold;;
+}
+.featureContent h5{
+    font-size:1.375em;
+    color:#202020;
+}
+.featureContent p{
+    color:#707070;
+    font-size:1.125em
+}
+@media(min-width:300px) and (max-width:767px){
+    .signInSection{
+        float:none;margin-top:20px;
+    }
+    .SignIn.btn{
+        margin-left:0;
+    }
+    .getMembership{
+        float:none;
+    }
+    .heroSection{
+        margin-top:20px;
+        padding-bottom:20px;
+    }
+    .counterBox{
+        margin-bottom:20px;
+    }
+    .counters{
+        padding-bottom:20px;
+    }
+    .meetImg{
+        width:100%;
+        float:none;
+    }
+.workBox{
+        padding:15px 0;
+        margin-bottom:20px;
+    }
+    .howWork{
+        padding:20px 0;
+    }
+    .Features{
+        padding:30px 0;
+    }
+    .Features hr{
+        margin:0;
+    }
+    .freeCirecle {
+        position: relative;
+        left: auto;
+        top: auto;
+    margin:auto; 
+}
+.rightFeature {
+    width: 100%;
+    left: 0;
+    top: -14px;
+    height: 225px;
+}
+.listContainer{
+    margin-top:20px;
+}
+.featureContent{
+    width:65%;
+}
+.featrureList{
+    margin-top:20px;
+}
+.featrureList li{
+    padding:10px 0;
+}
+.Features .title h4{
+    font-size:2.125em;
+}
+.meetPeople h2 {
+    font-size: 2.125em;
+    max-width: 100%;
+    margin-bottom: 38px;}
 }
