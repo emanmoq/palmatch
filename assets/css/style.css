@@ -278,8 +278,19 @@ width:278px;
     right: -3px;
     line-height: 50px;
     bottom: -14px;
+    background: linear-gradient(45deg, #0086AE, #00C4FF);
 }
 .second_img.workImg .badge-info{
     right:62px;
 
+}
+.tellUs{
+    font-size:1.625em;
+    font-weight: bold;
+    color:#202020;
+    margin-bottom:23px;
+}
+.joinLink{
+    font-size:1.250em;
+    color:#F5BB16;
 }
