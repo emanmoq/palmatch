@@ -533,6 +533,7 @@ margin-bottom:60px;
     width:100%;
     background-color:#E6F1F9;
     margin-top:60px;
+    padding:50px 0;
 }
 .membersItem{
     background-color:white;
@@ -585,9 +586,7 @@ margin-bottom:60px;
  .owl-item.active {
       opacity: 1;
     }
-.owl-stage{
-    padding:50px 0
-}
+
 .footer{
     background-image: url("../images/footer.png");
     background-size: cover;
@@ -663,7 +662,7 @@ border-radius: 50px;;
     border-radius: 50%;
     background: linear-gradient(45deg,#FFE95D, #FEB938);
     text-align:center;
-    margin-right:10px;
+    margin-right:5px;
     transition: all .3s;
 }
 .footerSocial li:last-child{
@@ -697,7 +696,28 @@ border-radius: 50px;;
     font-size: 15px;
 
 }
-
+.footerTitle{
+  font-size:1.375em;
+  color:white;
+  font-family: Muli-ExtraBold;  
+  margin-bottom:23px;
+}
+.footerList li{
+    margin-bottom:20px;
+}
+.footerList li a{
+    color:white;
+    font-size:1.375em;
+}
+.copyRight{
+    width:100%;
+    padding:24px 0;
+    text-align:center;
+    font-size:1em;
+    color:white;
+}
+/*-------------Responsive --------------*/
+/*-------------Small Screen --------------*/
 @media(min-width:300px) and (max-width:767px){
     
     .signInSection{
@@ -777,4 +797,107 @@ border-radius: 50px;;
         padding-top:20px;
         padding-bottom:20px;
     }
+.MembershipBtn {
+ margin-right: 10px;
+width: 153px;}
+.members{
+padding:30px;
+}
+ .title h4{
+ font-size:2em;
+ }
+ .sliderContainer{
+     margin-top:0
+ }
+ .footer {
+     padding-top: 100px;;
+ }
+}
+/*-------------Ipad Screen --------------*/
+
+@media(min-width:768px)and (max-width:1024px){
+    .footer ul{
+        margin-bottom:10px;
+    }
+    .footer{
+        padding-top:200px;
+    }
+    .members{
+        padding:30px 0;
+    }
+    .freeCirecle {
+        width: 180px;
+        height: 180px;
+        left: 10%;
+        top: 29%;}
+        .rightFeature {
+        position: absolute;
+        width: 25%;}
+        .textBackground {
+            width: 150px;
+            height: 145px;
+            padding-top: 26px;}
+ .textBackground span{
+     font-size:.650em;
+ }
+ .featureIcon{
+     width:50px;
+ }
+ .featureContent{
+     width:80%;
+ }
+ .featrureList li{
+     padding-bottom:0;
+     padding-top:0;
+ }
+ .workBox{
+     margin-bottom:10px;
+ }
+ .meetPeople{
+     padding:30px;
+ }
+ .meetImg{
+     width:100%;
+     float:none;
+ }
+ .counterBox{
+     margin-bottom:10px;
+ }
+ .counters{
+     padding:30px;
+ }
+ .heroSection{
+     padding-bottom: 20px;;
+     margin-top:20px;
+ }
+ .form-group-title{
+     width:30%;
+     font-size:.875em;
+ }
+
+ .radioButtonContainer {
+     margin-right:10px;
+     margin-left:10px;
+     font-size:.857em;
+     }
+     .heroForm .formlist{
+         padding:10px 0;
+     }
+     .form-control.ageconttrol{
+        width: 61px;
+        height: 39px;
+     }
+     .selectric-wrapper {
+        width: 180px;
+        height: 40px;}
+        .JoinBox {
+            background-color: white;
+            padding: 20px 23px 10px;}
+            .HeaderContainer{
+                width:102%;
+            }
+body{
+    overflow-x: hidden;
+}
+        
 }
