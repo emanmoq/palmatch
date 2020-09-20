@@ -1,5 +1,25 @@
 /*-----------Public-----------*/
 
+@font-face{
+    font-family: Muli-Light;
+    src:url("../fonts/Muli-Light.ttf")
+}
+@font-face{
+    font-family: Muli-SemiBold;
+    src:url("../fonts/Muli-SemiBold.ttf")
+}
+@font-face{
+    font-family: Muli-Bold;
+    src:url("../fonts/Muli-Bold.ttf");
+}
+@font-face {
+ font-family: Muli-ExtraBold;
+ src:url("../fonts/Muli-ExtraBold.ttf");
+}
+@font-face {
+    font-family:Muli-Black;
+ src:url("../fonts/Muli-Black.ttf");
+}
 ul{
     margin:0;
     padding:0;
@@ -20,6 +40,7 @@ body, html{
     margin:0;
     padding:0;
     background:#FAFBFF;
+    font-family: Muli-Light;
 }
 /*--------------Hearo-------------*/
 .HeaderContainer{
@@ -54,7 +75,7 @@ header{
 }
 .form-group-title{
     font-size:1.125em;
-    font-weight: bold;
+    font-family: Muli-Bold;
 }
 .navbar-expand-lg{
     width:100%;
@@ -74,6 +95,7 @@ header{
     font-size:2.5em;
     margin-bottom:50px;
     max-width:75%;
+    font-family: Muli-Bold;
 }
 .radioButtonContainer{
     display: inline-block;
@@ -210,15 +232,26 @@ padding-bottom:150px;
     background-color:white;
     border-radius: 30px;
     text-align: center;
-    padding:27px 0;
-    
-}
+    padding:27px 0;  
+    transition: all .5s;
 
+}
+.counterBox:hover .counterImg{
+    transform:scale(1.1);
+    transition: all .5s;
+}
+.counterBox:hover{
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    transition: all .5s;
+
+}
 .counterImg{
     width:90px;;
     margin:auto;
     margin-bottom:22px;
     height:70px;
+    transition: all .5s;
+
 }
 .counterImg.genderImg{
     width:50px;
@@ -227,6 +260,8 @@ padding-bottom:150px;
     margin-top:22px;
     margin-bottom:11px;
     font-size:1.875em;
+    font-family: Muli-ExtraBold;
+
 }
 .meetPeople{
     padding-bottom:127px;
@@ -236,7 +271,7 @@ font-size:3.125em;
 max-width: 75%;
 margin-bottom:60px;
 color:#202020;
-font-weight: bold;
+font-family:Muli-Black;
 }
 .meetPeople p{
     font-size:1.375em;
@@ -291,7 +326,7 @@ width:278px;
 }
 .tellUs{
     font-size:1.625em;
-    font-weight: bold;
+    font-family: Muli-Bold;
     color:#202020;
     margin-bottom:23px;
 }
@@ -303,10 +338,11 @@ width:278px;
     padding-top:130px;
     padding-bottom:170px;
 }
-.Features .title h4{
+ .title h4, .title h4{
     font-size:3.125em;
+    font-family:Muli-Black;
 }
-.Features .title p{
+ .title p , .title p{
     margin-bottom:40px;
     font-size:1.375em;
 }
@@ -379,7 +415,7 @@ color:white;
 .textBackground p{
 font-size:2.000em;
 color:white;
-font-weight: bold;;
+font-family: Muli-Bold;
 }
 .featureContent h5{
     font-size:1.375em;
@@ -389,7 +425,281 @@ font-weight: bold;;
     color:#707070;
     font-size:1.125em
 }
+.SuccessStories{
+    padding-bottom:180px;
+}
+.successSlider{
+    margin-top:20px;
+}
+.successSliderItem{
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all .5s;
+}
+.successSliderItem:hover{
+background-color: #80D5EE;
+box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+transition: all .5s;
+
+}
+.sliderImgContainer{
+    width:100%;
+    height:283px;
+    overflow: hidden;
+    transition: all .5s;
+}
+.successSliderItem:hover .sliderContent{
+    border-bottom: 1px solid #fff
+}
+.successSliderItem:hover .sliderImgContainer{
+    transform:scale(1.1);
+    overflow: hidden;
+    transition: all .5s;
+}
+.sliderContent{
+    padding:32px 22px;
+    border-bottom: 1px solid rgba(112, 112, 112, .11);
+ 
+}
+.successSliderItem:hover .sliderContent h4 ,.successSliderItem:hover .sliderContent p,.successSliderItem:hover  .sliderTail a,.successSliderItem:hover  .sliderTail a i{
+    color:white;
+    transition: all .5s;
+
+}
+.sliderContent h4{
+    font-size:1.375em;
+    color:#202020;
+    margin-bottom:20px;
+}
+.sliderContent p{
+    color:#707070;
+    font-size:1.000em;
+}
+.sliderTail {
+    padding:33px 40px;
+    text-align: center;
+    
+}
+.sliderTail a{
+    color:#0086AE;
+    font-size:1em;
+
+}
+.sliderTail  a i{
+    line-height: 1.5;
+    color:#BEBEBE;
+}
+.Membership{
+    background-image:url("../images/membership.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:119px;
+    padding-bottom:125px;
+}
+.MemberShipTitle h4{
+font-size:2.250em;
+color:white;
+margin-bottom:35px;
+font-family: Muli-Bold;
+}
+.MemberShipTitle p{
+font-size:1.375em;
+color:white;
+margin-bottom:60px;
+}
+.MembershipBtn{
+    display: inline-block;
+    margin-right:20px;
+    width:190px;
+    height:50px;
+    border-radius: 50px;
+    background-color:rgba(255,255,255,.19);;
+    color:white;
+    font-size: 1em;
+    font-family: Muli-SemiBold;
+    line-height: 32px;
+    transition: all .5s;;
+}
+.MembershipBtn:hover{
+    background: linear-gradient(45deg,#FFE95D, #FEB938);
+    color:white;
+    transition: all .5s;;
+}
+.members{
+    padding:125px 0 290px;
+}
+.sliderContainer{
+    width:100%;
+    background-color:#E6F1F9;
+    margin-top:60px;
+}
+.membersItem{
+    background-color:white;
+    padding:30px 0;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-top:60px;
+    padding:25px 0;
+    text-align: center;
+    transition: all .5s;;
+
+}
+.memberImg{
+    width:175px;
+    height:175px;
+    border-radius: 50%;
+    border:6px solid rgba(0, 134, 174, .17);
+    overflow: hidden;
+    margin:auto;
+    margin-bottom:20px
+}
+.memberDesc h3{
+    font-size:1.438em;
+    color:#202020;
+    margin-bottom:10px;
+    font-family: Muli-ExtraBold;
+}
+.membersItem:hover .memberDesc h3{
+    color:#0086AE;
+
+}
+.membersItem:hover{
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    transition: all .5s;;
+}
+.memberDesc p{
+    color:#0086AE;
+    font-size:1.063em;
+}
+.owl-stage-outer { 
+    overflow: visible;
+    }
+    
+ .owl-item {
+       opacity: 0;
+       transition: opacity .2s;
+    }
+ .owl-item.active {
+      opacity: 1;
+    }
+.owl-stage{
+    padding:50px 0
+}
+.footer{
+    background-image: url("../images/footer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top:240px;
+}
+.subscribe{
+    position: relative;
+    padding:0 15px;
+margin-bottom:50px;
+}
+.send{
+    position: absolute;
+    width:44px;
+    height:44px;
+    border-radius: 50%;
+    background: linear-gradient(45deg,#FFE95D, #FEB938);
+    text-align: center;
+    right: 20px;
+    top: 55%;
+    transition: all .5s;
+}
+.send:hover{
+    background: none;
+background-color: white;
+transition: all .5s;
+}
+.send:hover i{
+    color:#F5BB16;
+    transition: all .5s;
+
+}
+
+.send i{color:white;
+    transition: all .5s;
+line-height: 42px;}
+.footer h3{
+color:white;
+font-size:1.375em;
+margin-bottom:30px;
+
+}
+.form-control.footerFormControl{
+width: 100%;
+height:52px;
+background-color:rgba(255,255,255,.19);
+border:1px solid rgba(255,255,255,.57);
+border-radius: 50px;;
+}
+.form-control.footerFormControl::placeholder{
+    font-size:16px;
+    color:rgba(255,255,255,.57);
+    padding-left:20px;
+}
+.footer .row{
+    border-bottom: 1px solid rgba(255,255,255,.4);
+}
+.FooterLogo{
+    width:170px;
+    margin-bottom:20px;
+}
+.footerRow{
+    padding:35px 0;
+}
+.footerSocial{
+    display: inline-block;
+    margin-top:30px;
+}
+.footerSocial li{
+    display: inline-block;
+    width:39px;
+    height:39px;
+    border-radius: 50%;
+    background: linear-gradient(45deg,#FFE95D, #FEB938);
+    text-align:center;
+    margin-right:10px;
+    transition: all .3s;
+}
+.footerSocial li:last-child{
+    margin-right: 0;;
+}
+.footerSocial li:hover{
+    background: none;
+    background-color:rgba(255,255,255,.4);
+    transition: all .3s;;
+}
+.footerSocial li:hover i.fa-facebook-f{
+    color:#3b5998;
+}
+.footerSocial li:hover i.fa-twitter{
+   color: #00acee;
+}
+.footerSocial li:hover i.fa-instagram{
+    color:  #F56040 
+ }
+ .footerSocial li:hover i.fa-google-plus-g{
+    color:  #db4a39  
+ }
+ .footerSocial li:hover i.fa-play{
+    color:   #FF0000 
+ }
+
+
+.footerSocial li i{
+    line-height: 39px;
+    color:white;
+    font-size: 15px;
+
+}
+
 @media(min-width:300px) and (max-width:767px){
+    
     .signInSection{
         float:none;margin-top:20px;
     }
@@ -452,9 +762,19 @@ font-weight: bold;;
 }
 .Features .title h4{
     font-size:2.125em;
+    font-family:Muli-Black;
 }
 .meetPeople h2 {
     font-size: 2.125em;
     max-width: 100%;
     margin-bottom: 38px;}
+    .SuccessStories{
+        padding-bottom:30;
+
+    }
+    .Membership{
+       
+        padding-top:20px;
+        padding-bottom:20px;
+    }
 }
