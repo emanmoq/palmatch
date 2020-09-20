@@ -56,6 +56,27 @@ header{
 .navbar-brand{
     width:166px;
 }
+.languge {
+    float:left;
+}
+.languge .btn{
+    background-color: rgba(255,255,255,.42);
+    border-radius: 10px;
+    color:white;
+    font-size:.875em;
+    width:47px;
+    height:34px;
+    text-align: center;
+}
+.languge .dropdown-toggle::after{
+  
+    content: "\f078";
+    font-family:"Font Awesome 5 Brands";
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
 .signInSection{
     float:right;
 }
@@ -292,7 +313,7 @@ font-family:Muli-Black;
 .workBox{
     background-color:white;
     border-radius: 40px;
-    box-shadow: 0px 15px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 15px 25px rgba(0,0,0,.07);
     padding:60px 0 55px;
     text-align: center;
 }
