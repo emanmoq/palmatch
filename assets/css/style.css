@@ -41,6 +41,7 @@ body, html{
     padding:0;
     background:#FAFBFF;
     font-family: Muli-Light;
+    font-size:16px;
 }
 /*--------------Hearo-------------*/
 .HeaderContainer{
@@ -95,14 +96,14 @@ header{
     border-radius: 50px;
     width:121px;
     height:40px;
-    color:#F5BB16;
+    color:#F5BB16 !important;
     font-size:.875em;
     text-align: center;
     margin-left:8px;
 }
 .SignIn.btn:hover{
     background: linear-gradient(45deg,#FFE95D, #FEB938);
-    color:white;
+    color:white !important;
 }
 .form-group-title{
     font-size:1.125em;
@@ -236,6 +237,7 @@ border:1px solid #E5E5E5;
     margin:auto;
     color:white;
     transition: all .3s;
+    border:1px solid transparent;
 }
 .btn.joinBtn:hover{
     transition:all .3s;
@@ -747,9 +749,199 @@ border-radius: 50px;;
     font-size:1em;
     color:white;
 }
+ .modal-dialog{
+    width:347px;
+
+}
+.modal-content{
+    padding:24px 30px;
+    border-radius: 25px;;
+}
+.modal-title {
+font-size:1.75em;
+color:#202020;
+font-family:Muli-Black;
+margin-bottom:30px;
+}
+.modalForm .form-group{
+width:100%;
+margin-bottom:18px;
+}
+.modalForm .form-group .form-control{
+    width:100%;
+    background-color: #F3F3F3;
+    border:1px solid #E5E5E5;
+    height:50px;
+    border-radius: 50px;
+}
+.modalForm .form-group .form-control::placeholder{
+    font-size:16px;
+    font-family: Muli-SemiBold;
+    color:rgba(32, 32, 32, .5);
+    margin-right: 22px;;
+}
+.close span{
+    float: right;
+
+}
+.modal-body{
+    padding:0;
+}
+.rememberPass{
+    font-size:14px;
+    font-family: Muli-SemiBold;
+}
+.modalForm  .passwordFormGroup.form-group{
+    margin-bottom:10px;
+}
+.btn.joinBtn.modalLoginBtn{
+margin-top:10px;
+width:100%;
+border:1px solid transparent;
+box-shadow: 0 6px 15px rgba(0, 150, 194, .22);
+line-height: 31px;;
+}
+.btn.joinBtn.modalLoginBtn:hover{
+    border:1px solid #F5BB16;   
+}
+.forgetPassword{
+font-size:14px;
+color:#202020;
+margin-top:15px;
+font-family: Muli-SemiBold;
+display: block;
+text-align: center;
+}
+.or{
+    position: relative;
+    text-align: center;
+    margin-top:18px;
+    font-size:14px;
+    color:rgba(32, 32, 32, .5);
+    font-family: Muli-SemiBold;
+}
+.or:before{
+    position: absolute;
+    content:"";
+    width:45%;
+    left:0;
+    top:50%;
+    border-bottom:1px solid rgba(112, 112, 112, .18);
+}
+.or:after{
+    position: absolute;
+    content:"";
+    width:45%;
+    right:0;
+    top:50%;
+    border-bottom:1px solid rgba(112, 112, 112, .18);
+}
+.modalLoginBtn i{
+    margin-right:10px;
+}
+.joinBtn.modalLoginBtn.facbookBtn{
+background:none;
+background-color:#3C5A9A;
+}
+.joinBtn.modalLoginBtn.facbookBtn:hover{
+    background-color:white;
+    color:#3C5A9A;
+    border:1px solid #3C5A9A;
+    }
+.joinBtn.modalLoginBtn.googleplusBtn{
+    background:none;
+    background-color:#DC4A38;
+}
+.joinBtn.modalLoginBtn.googleplusBtn:hover{
+    background-color:white;;
+    border:1px solid #DC4A38;
+    color:#DC4A38 ;
+
+}
+#Membership .modal-dialog{
+    max-width:90%;
+    width:1013%;
+    padding:44px 58px 104px;;
+}
+.membershipBox {
+    position: relative;
+    padding:28px 22px; 
+    padding-bottom:50px;
+    text-align: center;
+    color:white;
+    background-image: linear-gradient(to bottom ,#0086AE ,#00C4FF);
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    overflow: hidden;
+    background-size: cover;
+    width:100%;
+    box-shadow: 0 10px 25px  rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.background{
+    width:100%;
+    position: absolute;
+    top:12px;
+    left:0px;
+    opacity: .39;
+}
+.membershipBox h6{
+    font-size:1.875em;
+    font-family: Muli-ExtraBold;
+}
+.headerMember{
+    padding-bottom:15px;
+    border-bottom:1px solid  rgba(255,255,255,.3)
+}
+.headerMember h5{
+    font-size:3em;
+    font-family: Muli-Bold;
+    margin-bottom:20px;
+}
+.headerMember span{
+    font-size:1.25em;
+    margin:0;
+    display: block;
+}
+.membershipList{
+    margin-top:20px;
+}
+.membershipList li{
+    font-size:12px;
+    margin-bottom:5px;
+}
+.membershipList li i{
+    color:white;
+    font-size:10px;
+    margin-right:5px;
+}
+.joinBtn.modalLoginBtn.subscribeBtn{
+    width:143px;
+    height:48px;
+    display: block;
+    margin:auto;
+    z-index: 22;
+    position: relative;
+    margin-top:-22px;
+}
+button:focus {
+    outline: 0;
+    outline: 0;
+}
+#Membership .modal-dialog {
+    max-width: 100%;
+    width: 97%;
+    padding:0;
+}
 /*-------------Responsive --------------*/
 /*-------------Small Screen --------------*/
 @media(min-width:300px) and (max-width:767px){
+    .modal-dialog{
+        width:90%;
+    }
+    .joinBtn.modalLoginBtn.subscribeBtn{
+        margin-bottom:20px;
+    }
     .languge{
         float:right;
     }

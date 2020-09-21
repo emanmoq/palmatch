@@ -53,22 +53,22 @@
           <div class="col-lg-4 col-md-6  order-lg-3 order-md-2">
             <div class="signInSection ">
               <div class="languge dropdown">
-                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  En 
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  En
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                   <a class="dropdown-item" href="#">عربي</a>
                 </div>
               </div>
-              <a href="#" class="btn SignIn">Sign In</a>
-              <a href="#" class="btn signIn">Sign Up</a>
+              <a data-toggle="modal" data-target="#loginModal" class="btn SignIn">Sign In</a>
+              <a href="#" data-toggle="modal" data-target="#SignupModel" class="btn signIn">Sign Up</a>
 
             </div>
           </div>
         </nav>
       </div>
-      <div class="getMembership"><a href="#">Get a membership</a></div>
+      <div class="getMembership"><a href="#" data-toggle="modal" data-target="#Membership">Get a membership</a></div>
 
     </div>
 
@@ -558,8 +558,184 @@
     </div>
   </footer>
   <!--End Footer-->
-  <!------------------------------------------------->
+  <!-----Sign In Modal---->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h5 class="modal-title text-center" id="loginModalLabel">Login</h5>
 
+        <div class="modal-body">
+          <form action="" class="modalForm">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group passwordFormGroup">
+              <input type="password" class="form-control" placeholder="password">
+            </div>
+            <div class="form-group ">
+              <input type="checkbox" id="Remember">
+              <label for="Remember" class="rememberPass">Remember Password</label>
+            </div>
+            <button class="btn joinBtn modalLoginBtn" type="submit">Login</button>
+            <a href="#" class="forgetPassword">Forget Password</a>
+            <div class="or">Or</div>
+            <a href="#" class="btn joinBtn modalLoginBtn facbookBtn"><i class="fab fa-facebook-f"></i> facbook </a>
+            <a href="#" class="btn joinBtn modalLoginBtn googleplusBtn"><i class="fab fa-google-plus-g"></i> Google</a>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- End Sign In Modal -->
+  <!------------------------------------------------->
+  <!-----Sign Up Modal---->
+
+  <div class="modal fade" id="SignupModel" tabindex="-1" aria-labelledby="SignupModelLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h5 class="modal-title text-center" id="SignupModelLabel">Sign Up</h5>
+
+        <div class="modal-body">
+          <form action="" class="modalForm">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="User Name">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group ">
+              <input type="password" class="form-control" placeholder="password">
+            </div>
+            <div class="form-group passwordFormGroup">
+              <input type="password" class="form-control" placeholder="Confirm password">
+            </div>
+            <div class="form-group ">
+              <input type="checkbox" id="Remember">
+              <label for="Remember" class="rememberPass">Terms & Conditions</label>
+            </div>
+            <button class="btn joinBtn modalLoginBtn" type="submit">Next</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!----- End Sign Up Modal---->
+  <!------------------------------------------------->
+  <!-----Membership Modal---->
+  <div class="modal fade" id="Membership" tabindex="-1" aria-labelledby="MembershipLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h5 class="modal-title text-center" id="MembershipLabel">Get You Membership</h5>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="membershipBox">
+                  <div class="background">
+                    <img src="assets/images/memberbg.png" alt="">
+                  </div>
+                  <div class="headerMember">
+                    <h6>Premium</h6>
+                    <h5>1</h5>
+                    <span>Month</span>
+                    <span>100$</span>
+                  </div>
+                  <ul class="membershipList">
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                  </ul>
+                </div>
+                <a href="#" class="btn joinBtn modalLoginBtn subscribeBtn"> Subscribe</a>
+
+              </div>
+              <div class="col-md-3">
+                <div class="membershipBox">
+                  <div class="background">
+                    <img src="assets/images/memberbg.png" alt="">
+                  </div>
+                  <div class="headerMember">
+                    <h6>Premium</h6>
+                    <h5>3</h5>
+                    <span>Month</span>
+                    <span>300$</span>
+                  </div>
+                  <ul class="membershipList">
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                  </ul>
+                </div>
+                <a href="#" class="btn joinBtn modalLoginBtn subscribeBtn"> Subscribe</a>
+
+              </div>
+              <div class="col-md-3">
+                <div class="membershipBox">
+                  <div class="background">
+                    <img src="assets/images/memberbg.png" alt="">
+                  </div>
+                  <div class="headerMember">
+                    <h6>Premium</h6>
+                    <h5>6</h5>
+                    <span>Month</span>
+                    <span>500$</span>
+                  </div>
+                  <ul class="membershipList">
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                  </ul>
+                </div>
+                <a href="#" class="btn joinBtn modalLoginBtn subscribeBtn"> Subscribe</a>
+
+              </div>
+              <div class="col-md-3">
+                <div class="membershipBox">
+                  <div class="background">
+                    <img src="assets/images/memberbg.png" alt="">
+                  </div>
+                  <div class="headerMember">
+                    <h6>Premium</h6>
+                    <h5>1</h5>
+                    <span>Year</span>
+                    <span>700$</span>
+                  </div>
+                  <ul class="membershipList">
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                    <li><i class="fas fa-chevron-right"></i>Quos quam laboriosam sed</li>
+                  </ul>
+                </div>
+                <a href="#" class="btn joinBtn modalLoginBtn subscribeBtn"> Subscribe</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!----- End Sign Up Modal---->
 
   <script type="text/javascript" src="assets/js/jquery1.js"></script>
   <script type="text/javascript" src="assets/js/waypoints-min.js"></script>
@@ -572,7 +748,9 @@
   <script type="text/javascript" src="assets/js/jquery.selectric.min.js"></script>
   <script src="assets/js/owl.carousel.js"></script>
   <script type="text/javascript" src="assets/js/main.js"></script>
-
+  <script>
+    $("#Membership").modal('show')
+  </script>
   <script>
     $('.select').selectric({
       disableOnMobile: false,
