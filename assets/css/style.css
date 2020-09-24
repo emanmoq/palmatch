@@ -940,6 +940,7 @@ button:focus {
     width:100%;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 1;
 }
 .RegestrationContainer:before{
     content: "";
@@ -948,6 +949,8 @@ button:focus {
     height:100%;
     top:0;
     left:0;
+    opacity: .65;
+    z-index: 0;
 background-image: linear-gradient(to bottom ,#0086AE ,#00C4FF);
 }
 .skip{
@@ -961,6 +964,9 @@ border-radius: 50px;
 font-family: Muli-SemiBold;
 margin-left:20px;
 }
+.skip:hover{
+    background-color: rgba(255,255,255,.4);
+}
 .signInSection span ,a.loginLink{
 color:white !important;
 font-size:14px;
@@ -972,8 +978,11 @@ font-family: Muli-SemiBold;
 }
 
 .stepsForm{
-    width:25%;
-    margin:auto
+    width:400px;
+    margin:auto;
+    text-align: center;
+    margin-top:40px;
+    padding-bottom:20px;
 }
 .stepsWelcom h5{
     font-size:30px;
@@ -995,6 +1004,7 @@ font-family: Muli-SemiBold;
     color:white;
     float: none;
     position: relative;
+    width:291px;
 }
 .stepsForm .selectric-wrapper .button{
     color:white;
@@ -1004,9 +1014,9 @@ font-family: Muli-SemiBold;
     text-align: center;
 }
 .stepsForm .form-group{
-    width:291px;
     display: block;
     margin-bottom:20px;
+    text-align: left;
 }
 .stepsForm .form-control::placeholder{
     color:white;
@@ -1017,11 +1027,15 @@ font-size:18px;
 font-family: Muli-Bold;
 color:white;
 position: relative;
+text-align: left;
 
 }
 .btn.joinBtn.nextBtn{
     width:290px;
+    margin:auto;
     margin-top:25px;
+    position: relative;
+    
 }
 .checkboxCont{
     position: relative;
@@ -1039,7 +1053,7 @@ position: relative;
 .checkboxStyle{
 position: relative;
     display: inline-block;
-    margin-left:5px;
+    margin-left:7px;
     background-color:#80D6F0;
 height:30px;
 font-size:12px;
@@ -1062,6 +1076,45 @@ padding: 4px 12px;
 height: auto;
 margin-left:0;
   }
+  #rootwizard{
+      position: relative;
+  }
+  .stepsForm textarea.form-control{
+      width:100%;
+      height:180px;
+      border-radius: 15px;
+      resize: none;
+    text-align: left;
+  }
+  #uploadPhoto,#uploadPhotoCover{
+visibility: hidden;
+width: 0;
+height: 0;
+position: absolute;
+  }
+  .uploadImg{
+      display: block;
+      width:109px;
+      height: 109px;
+      margin:auto;
+  }
+.uploadCover{
+    width:100%;
+    height:180px;
+    border-radius: 15px;
+    background-color: #84D8F2;
+    border:1px solid rgba(255,255,255,.61);
+    text-align: center;
+    display: block;
+
+}
+.innerImgCover{
+    width:53px;
+    height:35px;
+    margin: auto;
+    margin-top: 76px;
+
+}
 /*-------------Responsive --------------*/
 /*-------------Small Screen --------------*/
 @media(min-width:300px) and (max-width:767px){
