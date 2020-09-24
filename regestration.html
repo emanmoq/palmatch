@@ -105,8 +105,8 @@
                             <option value="">Palestine</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for=""> Hobbies (Checkbox)</label>
+                    <div class="form-group checkboxFormGroup">
+                        <label for="" class="checkboxTitle"> Hobbies (Checkbox)</label>
                         <div class="checkboxContainer">
                             <label class="checkboxCont" for="Acting">
                                 <input type="checkbox" id="Acting">
@@ -138,12 +138,10 @@
                         </div>
 
                     </div>
-
-                    <a href="#" class="btn joinBtn nextBtn"> Next</a>
                 </div>
                 <div class="tab-pane" id="tab3">
-                    <div class="form-group">
-                        <label for="">Looking For</label>
+                    <div class="form-group checkboxFormGroup">
+                        <label for="" class="checkboxTitle">Looking For</label>
                         <div class="checkboxContainer">
                             <label class="checkboxCont" for="Normal">
                                 <input type="checkbox" id="Normal">
@@ -174,17 +172,16 @@
 
                     </div>
 
-                    <a href="#" class="btn joinBtn nextBtn"> Next</a>
                 </div>
-                <div class="tab-pane " id="tab4">
-                    <div class="form-group">
+                <div class="tab-pane" id="tab4">
+                    <div class="form-group uploadformGroup">
                         <label> Profile Photo </label>
                         <input type="file" id="uploadPhoto">
                         <Label for="uploadPhoto" class="uploadImg">
                             <img src="assets/images/uploadImg.png" alt="">
                         </Label>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group uploadformGroup">
                         <label> Profile Cover </label>
                         <input type="file" id="uploadPhotoCover">
                         <Label for="uploadPhoto" class="uploadCover">
@@ -192,7 +189,7 @@
                         </Label>
 
                     </div>
-                    <a href="#" class="btn joinBtn  nextBtn">Finish</a>
+                    <a href="#" class="btn joinBtn  nextBtn" type="submit">Finish</a>
 
                 </div>
 
@@ -200,6 +197,7 @@
             <ul class="pager wizard">
                 <li class="next"><a class="joinBtn btn nextBtn" href="#">Next</a></li>
             </ul>
+          
         </form>
      
     </div>
@@ -269,14 +267,15 @@
         });
     </script>
     <script>
-        $(document).ready(function () {
-            $('#rootwizard').bootstrapWizard({
-                tabClass: 'nav nav-pills',
-                onNext: function (tab, navigation, index) {
-
-                }
-            });
-        });
+	$(document).ready(function() {
+	  	$('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
+			var $total = navigation.find('li').length;
+			var $current = index+1;
+			var $percent = ($current/$total) * 100;
+			$('#rootwizard .progress-bar').css({width:$percent+'%'});
+		}});
+		window.prettyPrint && prettyPrint()
+	});
 
     </script>
 </body>

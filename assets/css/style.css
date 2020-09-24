@@ -978,11 +978,13 @@ font-family: Muli-SemiBold;
 }
 
 .stepsForm{
-    width:400px;
     margin:auto;
     text-align: center;
     margin-top:40px;
     padding-bottom:20px;
+}
+.stepsWelcom{
+    margin-top:45px;
 }
 .stepsWelcom h5{
     font-size:30px;
@@ -1004,7 +1006,7 @@ font-family: Muli-SemiBold;
     color:white;
     float: none;
     position: relative;
-    width:291px;
+
 }
 .stepsForm .selectric-wrapper .button{
     color:white;
@@ -1014,10 +1016,15 @@ font-family: Muli-SemiBold;
     text-align: center;
 }
 .stepsForm .form-group{
+    width:291px;
+    margin: auto;
     display: block;
     margin-bottom:20px;
     text-align: left;
 }
+.stepsForm .form-group.checkboxFormGroup,.stepsForm .form-group.uploadformGroup{
+}
+
 .stepsForm .form-control::placeholder{
     color:white;
     text-align: center;
@@ -1027,7 +1034,6 @@ font-size:18px;
 font-family: Muli-Bold;
 color:white;
 position: relative;
-text-align: left;
 
 }
 .btn.joinBtn.nextBtn{
@@ -1036,6 +1042,9 @@ text-align: left;
     margin-top:25px;
     position: relative;
     
+}
+.checkboxContainer{
+    text-align: center;
 }
 .checkboxCont{
     position: relative;
@@ -1114,6 +1123,17 @@ position: absolute;
     margin: auto;
     margin-top: 76px;
 
+}
+.form-group label.checkboxTitle{
+    margin-left:50px;
+}
+.progress{
+    height:6px;
+    background-color: rgba(255,255,255,.2);
+
+}
+.progress-bar{
+    background-color: white;;
 }
 /*-------------Responsive --------------*/
 /*-------------Small Screen --------------*/
