@@ -1148,8 +1148,9 @@ position: absolute;
 /*-------------Small Screen --------------*/
 @media(min-width:300px) and (max-width:767px){
     .RegestrationContainer{
-        height:100%;
+        padding-bottom:200px;
     }
+
     .modal-dialog{
         width:90%;
     }
@@ -1273,6 +1274,9 @@ text-align: left;
 /*-------------Ipad Screen --------------*/
 
 @media(min-width:768px)and (max-width:1024px){
+    .RegestrationContainer{
+        height:100%;
+    }
     .footer ul{
         margin-bottom:10px;
     }
