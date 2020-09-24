@@ -610,6 +610,7 @@ margin-bottom:60px;
 }
 .owl-stage-outer { 
     overflow: visible;
+    padding:20px;
     }
     
  .owl-item {
@@ -941,7 +942,6 @@ button:focus {
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
-    height: 100%;
 }
 .RegestrationContainer:before{
     content: "";
@@ -1147,6 +1147,9 @@ position: absolute;
 /*-------------Responsive --------------*/
 /*-------------Small Screen --------------*/
 @media(min-width:300px) and (max-width:767px){
+    .RegestrationContainer{
+        height:100%;
+    }
     .modal-dialog{
         width:90%;
     }
