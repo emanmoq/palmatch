@@ -17,130 +17,95 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
-<div class="HeaderContainer">
-  <!--Start Header-->
-  <header>
-    <div class="container">
-      <div class="row">
-        <nav class="navbar navbar-expand-lg order-md-1">
-          <div class="col-lg-2 col-md-6">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
-          </div>
-          <div class="col-lg-6 col-md-6 order-lg-2 order-md-3">
-            <!--              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">portofoilo</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">portofoilo</a>
-                  </li>
-
-                </ul>
-              </div>-->
-
-          </div>
-          <div class="col-lg-4 col-md-6  order-lg-3 order-md-2">
-            <div class="signInSection ">
-              <div class="languge dropdown">
-                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  En
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">عربي</a>
-                </div>
+<header id="innerHeader">
+  <div class="container">
+      <div class="row justify-content-center">
+          <nav class="navbar navbar-expand-lg order-md-1">
+              <div class="col-lg-2 col-md-6">
+                  <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
               </div>
-              <a data-toggle="modal" data-target="#loginModal" class="btn SignIn">Sign In</a>
-              <a href="#" data-toggle="modal" data-target="#SignupModel" class="btn signIn">Sign Up</a>
+              <div class="col-lg-7 col-md-6 order-lg-2 order-md-3">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                      <ul class="navbar-nav">
+                          <li class="nav-item">
+                              <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link active" href="Discover.html"><i
+                                      class="fas fa-binoculars"></i>Discover</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#"><i class="fas fa-comments"></i>Chat</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#"><i class="fas fa-heart"></i>Likes</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#"><i class="fas fa-search"></i>Search</a>
+                          </li>
 
-            </div>
-          </div>
-        </nav>
+                      </ul>
+                  </div>
+
+              </div>
+              <div class="col-lg-3 col-md-6  order-lg-3 order-md-2">
+                  <div class="signInSection ">
+                      <div class="languge dropdown">
+                          <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              En
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="#">عربي</a>
+                          </div>
+                      </div>
+                      <div class="profilSec">
+                          <a class="profile dropdown" href="#" role="button" id="ProfileDropdown"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <div class="profImg">
+                                  <img src="assets/images/uploadImg.png" alt="">
+                              </div>
+                              <div class="profName">
+                                  <p>welcome</p>
+                                  <h4>Ibrahim Jalal</h4>
+                              </div>
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="ProfileDropdown">
+                              <li>
+                                <a href="#"> <i class="fas fa-bell"></i>  Notification</a>
+                              </li>
+                              <li>
+                                 <a href="#"><i class="fas fa-medal"></i> Upgrade</a>
+
+                              </li>
+                              <li>
+                                  <a href="#"><i class="fas fa-user"></i>Profile</a>
+                              </li>
+                              <li>
+                              <a href="#"><i class="fas fa-pencil-alt"></i>Edit Profile</a>
+                              </li>
+                              <li>
+                                 <a href="#"><i class="fas fa-lock"></i> Change Password</a>
+                              </li>
+                              <li>
+                                  <a href="#"><i class="fas fa-sign-out-alt"></i>LogOut</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </nav>
       </div>
-      <div class="getMembership"><a href="#" data-toggle="modal" data-target="#Membership">Get a membership</a></div>
-
-    </div>
-
-  </header>
-  <!--End Header-->
-  <!-------------------------->
-  <!--Start Hero Section-->
-  <section class="heroSection">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-md-6">
-          <h1 class="heroText">Find your life partner</h1>
-          <div class="JoinBox">
-            <form action="" class="heroForm text-center">
-              <ul class="text-left">
-                <li class="formlist">
-                  <div class="form-group clearfix">
-                    <label class="form-group-title" for=""> seeking a </label>
-                    <div class="Rightside float-right">
-                      <label class="radioButtonContainer">Man
-                        <input type="radio" class="radioButton">
-                        <span class="checkmark"></span>
-                      </label>
-
-                      <label class="radioButtonContainer">Women
-                        <input type="radio" class="radioButton">
-                        <span class="checkmark"></span>
-                      </label> </div>
-                  </div>
-                </li>
-                <li class="formlist">
-                  <div class="form-group clearfix">
-                    <label class="form-group-title" for=""> Age </label>
-                    <div class="Rightside float-right">
-                      <input type="text" class="form-control ageconttrol" placeholder="25">
-                      <span class="dash">-</span>
-                      <input type="text" class="form-control ageconttrol" placeholder="30">
-
-                    </div>
-                  </div>
-                </li>
-                <li class="formlist">
-                  <div class="form-group clearfix">
-                    <label class="form-group-title" for=""> country </label>
-                    <div class="Rightside float-right">
-                      <select name="" id="" class="select">
-                        <option value="" selected>palestine</option>
-                        <option value="">jordan</option>
-                        <option value="">germany</option>
-                      </select>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-
-              <button type="submit" class="btn joinBtn">Join Now</button>
-            </form>
-
-
-          </div>
-        </div>
-        <div class="col-lg-7  col-md-6 col-12clearfix">
-          <div class="heroImg float-right">
-            <img src="assets/images/twins.png" alt="">
-          </div>
-        </div>
+      <div class="getMembership"><a href="#" data-toggle="modal" data-target="#Membership">Get a membership</a>
       </div>
-    </div>
-  </section>
-  <!--End Hero Section-->
-</div>
-<!--Start Body-->
+
+  </div>
+
+</header>
 
 <body>
   <!--Start Counters Section-->

@@ -56,9 +56,55 @@ header{
     border-bottom:1px solid rgba(255,255,255,.2);
     padding-bottom:10px;
 }
+.mobilenav{
+    display: none;
+}
+
 .navbar-brand{
     width:100%;
 }
+.mobileMenu{
+    cursor: pointer;
+    width: 25px;
+    height: 17px;
+    margin: auto;
+}
+.mobileMenu i{
+    background-color:white;;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 91%;
+    height: 3px;
+
+}
+button.navbar-toggler {
+    position: relative;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 0;
+    opacity: .7;
+    border:1px solid #f7941e;
+    text-align: center;
+    margin-top:25px;
+}
+.mobileMenu i {
+    animation: nav2 0.8s backwards;
+    animation-direction: reverse;
+}
+.mobileMenu i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: nav1 0.8s backwards;
+    animation: nav1 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;}
+    .mobileMenu i:nth-child(3) {
+        -webkit-animation: nav3 0.8s backwards;
+        animation: nav3 0.8s backwards;
+        -webkit-animation-direction: reverse;
+        animation-direction: reverse;
+    }
 .languge {
     float:left;
 }
@@ -260,6 +306,7 @@ margin:0;
       opacity: .7;
       text-align: center;
   }
+
   .Rightside .dash{
       margin:0 10px;
       color:#707070;
@@ -458,6 +505,23 @@ width:278px;
     height:100%;;
     opacity:20%;
 }
+.rightFeatureImg{
+    width:40%;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.rightFeatureImg:before{
+    content: "";
+    position: absolute;width:100%;
+    left:0;
+    top:0;
+    height:auto;
+    background-image:linear-gradient(45deg ,#00C4FF,#0086AE);
+    height:100%;;
+    width:100%;
+    opacity:20%;
+}
 .freeCirecle{
 position: absolute;
  background-image:linear-gradient(rgba(254, 185, 56, .5),rgba(255, 233, 93, .5));
@@ -480,9 +544,10 @@ position: absolute;
 }
 .featureContent{
     display: inline-block;
+    width:75%;
 }
 .featrureList li{
-    padding-bottom:40px;
+    padding-bottom:20px;
   padding-top:35px;
 }
 .featrureList li:first-child{
@@ -1210,9 +1275,274 @@ position: absolute;
 .tab-content .tab-pane:last-child + .pager.wizard{
     display: none !important;
 }
+/*------------ DiscoverImg -------------*/
+.innerBody{
+    padding-top:50p;
+    background-color: #FAFBFF;
+}
+.innerTitle h4{
+
+}
+.personImg{
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom:23px;
+    position: relative;
+    transition: all .5s;
+}
+.personImg:before{
+    position: absolute;
+    content: "";
+    width:100%;
+    bottom:0;
+    background-image: linear-gradient(to top ,black,rgba(255,255,255,0));
+    z-index: 1;
+    height: 50%;
+}
+.personImg:hover img{
+transform:scale(1.1);
+transition: all .5s;
+}
+.personImg img{
+    transition: all .5s;
+}
+#innerHeader{
+    margin-bottom:50px;
+    background-image: linear-gradient(45deg ,#0086AE,#00C4FF);
+}
+.quickSearch{
+    padding:40px 30px;
+    background-color:white;
+    border-radius: 40px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.07);
+}
+.quickSearch h3{
+    font-size:1.375em;
+    color:#202020;
+    font-family: Muli-Bold;
+    margin-bottom: 50px;;
+}
+#slider{
+    background-color:rgba(112, 112, 112,.18);
+    border:0;
+    height: 7px;
+  
+}
+.Rightside.sliderCont{
+    position: relative;
+    width:70%
+}
+.ui-slider-horizontal .ui-slider-range{
+    background-color:#0086AE;
+}
+.ui-slider-handle.ui-corner-all.ui-state-default{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    border:3px solid #FEB938;
+    background-color: white;
+}
+#min, #max {
+    width: 50px;
+    text-align: center;
+}
+.DiscoverHeader {
+    margin-bottom:20px;
+}
+.DiscoverHeader h4,.DiscoverHeader a{
+    display: inline-block;
+}
+.DiscoverHeader a{
+    font-size:1.125em;
+    color:#0086AE;
+    font-family: Muli-Bold;
+    display: inline-block;
+    float: right;
+}
+.DiscoverHeader h4{
+    font-size:1.750em;
+    font-family: Muli-ExtraBold;
+}
+.profilSec .dropdown-menu{
+    border-radius: 0 0 10px 10px;;
+    box-shadow: 0 5px 25px rgba(0,0,0,.07);
+    width:280px;
+    top:56px;
+    padding:0;
+    overflow: hidden;
+}
+.profilSec .dropdown-menu a{
+
+    font-size:.875em;
+    color:rgba(32, 32, 32, .6);
+    font-family: Muli-Bold;
+
+}
+.profilSec .dropdown-menu a i{
+    margin-right:9px;
+    font-size:17px;
+}
+.profilSec .dropdown-menu li{
+padding:12px 19px;;
+transition:all .2s;
+
+}
+.profilSec .dropdown-menu li:hover{
+    background-color: #00C4FF;
+    transition:all .2s;
+
+}
+.profilSec .dropdown-menu li:hover a{
+    color:white;
+}
+.profilSec .dropdown-menu li:first-child{
+    padding-top:25;
+    }
+.profilSec .dropdown-menu li:last-child{
+    padding-bottom:25;
+    }
+.personDesc{
+    position: absolute;
+    z-index: 1;
+    left:21px;
+    bottom:15px;
+}
+.personDesc h3{
+    font-size: 14px;    
+    font-family: Muli-Bold;
+    color:white;
+    margin:0;
+}
+.personDesc p{
+    font-size:12px;
+    color:white;
+    margin:0;
+}
+.Like,.sameHabbies,.toKnow{
+    margin-top:85px;
+}
+.DiscoverHeader span{
+    font-size:1.250em;
+    color: rgba(32, 32, 32, .3);
+    font-family: Muli-Bold;
+    display: block;
+}
+.personCard{
+    background-color:white;
+    border-radius: 25px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,.07);
+    padding:12px;
+}
+.personCard .personImg{
+    float: left;
+    width:300px;
+    display: inline-block;
+    margin-bottom:0;
+}
+.personCard .personDetails{
+    display: inline-block;
+    float: left;
+    margin-left:37px;
+    margin-top:32px;
+}
+.personCard table tr td:first-child{
+    padding-right:60px;
+}
+.personCard table tr{
+    margin-bottom:33px;
+    display: block;
+}
+.personCard table td span{
+    display: block;
+    color: rgba(32, 32, 32, .3);
+    font-size:1.125em;
+    margin-bottom:5px;
+    font-family: Muli-ExtraBold;
+}
+.personCard table td p{
+    color: rgba(32, 32, 32);
+    font-size:1.125em;
+}
+.btn.likeBtn{
+    width:72px;
+    height: 72px;
+    border-radius: 50%;
+    color:white;
+    box-shadow:0 6px 15px rgba(0, 150, 194, .28);
+    background: linear-gradient(45deg,#FFE95D, #FEB938);
+    text-align: center;
+    line-height: 70px;
+    font-size:30px;
+    margin-right:10px;
+}
+.btn.likeBtn i{
+    line-height: 57px;
+    transition: all .5s;;
+}
+.btn.likeBtn:hover i{
+    transform: scale(1.2);
+transition: all .5s;;
+}
+.btn.likeBtn.blueBG{
+    background: linear-gradient(25deg, #00C4FF,#0086AE 80%);
+    margin-right:0;
+}
+.LikeSection{
+    margin-top:10px;
+}
+.discoverFooter{
+    margin-top: 280px;;
+}
+
 /*-------------Responsive --------------*/
 /*-------------Small Screen --------------*/
 @media(min-width:300px) and (max-width:767px){
+
+    #innerHeader{
+        background-image: none;
+        background-color: #00B6EC;
+        height: 150px;
+    }
+    .mobilenav .navbar-collapse{
+        position: absolute;
+        width:100%;
+        left:0;
+        background-color: #00B6EC;
+        top: 110px;
+        z-index: 99999999999999999999;
+        padding:20px;
+            }
+            .profilSec .dropdown-menu {
+                border-radius: 0 0 10px 10px;
+                box-shadow: 0 5px 25px rgba(0,0,0,.07);
+                width: 100%;
+                top: 109px;}
+    .desktopNav{
+        display: none;
+    }
+    .mobilenav{
+        display: block;
+    }
+    .navbar-brand{
+        width: 40%;
+        float: left;
+    }
+ 
+    button.navbar-toggler{
+        margin-top:0;
+        float: right;
+    }
+    .mobilenav .signInSection {
+        width:100%;
+        float:left;
+        margin-top:10px;
+    }
+    .mobilenav .nav-link:before{
+        display: none;
+    }
+    .mobilenav .profile{
+    margin-left: 0;;
+    }
     .RegestrationContainer{
         padding-bottom:200px;
     }
@@ -1335,6 +1665,28 @@ padding:30px;
 .checkboxContainer{
 text-align: left;
 }
+.quickSearch{
+    margin-bottom: 50px;;
+}
+.personCard .personImg{
+    width: 100%;;
+}
+.LikeSection{
+    float: none;
+   
+}
+.personCard .personDetails{
+    margin-left:10px;
+}
+.personCard .personDetails table tr{
+    margin-bottom:10px;
+}
+.discoverFooter{
+    margin-top:50px;
+}
+.send{
+    top:63%;
+}
 }
 /*-------------Ipad Screen --------------*/
 
@@ -1425,5 +1777,27 @@ text-align: left;
 body{
     overflow-x: hidden;
 }
+.Suggestions .row{
+    justify-content: center;
+}
+.quickSearch{
+    margin-bottom:50px;
+}
+.profilSec .dropdown-menu{
+    top: 77px;
+    left: 58px;
+}
+/***        #innerHeader .signInSection{
+float: none;
+margin-top:20px;
+        }
+        ***/
+/***        .navbar-collapse{
+position: absolute;
+width:100%;
+background-image: linear-gradient(45deg ,#0086AE,#00C4FF);
+top:140px;
+z-index: 222222222222222222222222;
+        }**/
         
 }
