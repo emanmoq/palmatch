@@ -1704,12 +1704,14 @@ text-align: left;
         left: -25px;
         background-color: #00B6EC;
         top: 128px;
-        z-index: 99999999999999999999;
+        z-index: 99999;
+        padding: 20px;;
             }
             .profilSec .dropdown-menu {
                 border-radius: 0 0 10px 10px;
                 box-shadow: 0 5px 25px rgba(0,0,0,.07);
                 top: 125px;
+           z-index: 999999 ;
             }
     .desktopNav{
         display: none;
