@@ -1691,6 +1691,51 @@ text-align: left;
 /*-------------Ipad Screen --------------*/
 
 @media(min-width:768px)and (max-width:1024px){
+    #innerHeader{
+        background-image: none;
+        background-color: #00B6EC;
+        height: 150px;
+    }
+    .mobilenav .navbar-collapse{
+        position: absolute;
+        width:100%;
+        position: absolute;
+        width: 121%;
+        left: -25px;
+        background-color: #00B6EC;
+        top: 128px;
+        z-index: 99999999999999999999;
+            }
+            .profilSec .dropdown-menu {
+                border-radius: 0 0 10px 10px;
+                box-shadow: 0 5px 25px rgba(0,0,0,.07);
+                top: 125px;
+            }
+    .desktopNav{
+        display: none;
+    }
+    .mobilenav{
+        display: block;
+    }
+    .navbar-brand{
+        width: 40%;
+        float: left;
+    }
+    button.navbar-toggler{
+        margin-top:0;
+        float: right;
+    }
+    .mobilenav .signInSection {
+        width:100%;
+        float:left;
+        margin-top:10px;
+    }
+    .mobilenav .nav-link:before{
+        display: none;
+    }
+    .mobilenav .profile{
+    margin-left: 0;;
+    }
     .RegestrationContainer{
         height:100%;
     }
@@ -1782,10 +1827,6 @@ body{
 }
 .quickSearch{
     margin-bottom:50px;
-}
-.profilSec .dropdown-menu{
-    top: 77px;
-    left: 58px;
 }
 /***        #innerHeader .signInSection{
 float: none;
