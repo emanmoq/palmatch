@@ -1495,6 +1495,7 @@ transition: all .5s;;
 }
 
 /*-------------Responsive --------------*/
+
 /*-------------Small Screen --------------*/
 @media(min-width:300px) and (max-width:767px){
 
@@ -1690,7 +1691,7 @@ text-align: left;
 }
 /*-------------Ipad Screen --------------*/
 
-@media(min-width:768px)and (max-width:1024px){
+@media(min-width:768px)and (max-width:1023px){
     #innerHeader{
         background-image: none;
         background-color: #00B6EC;
@@ -1843,4 +1844,19 @@ top:140px;
 z-index: 222222222222222222222222;
         }**/
         
+}
+@media(min-width:1024px)and (max-width:1150px){
+    .mobilenav{
+        display: none;
+    }
+    .desktopNav{
+        display: block;
+    }
+    .profile{
+        margin-left:0;
+    }
+    .navbar-expand-lg .navbar-nav .nav-item {
+        padding-left: 5px;
+        padding-right: 5px;}
+
 }
