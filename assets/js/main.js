@@ -1,4 +1,17 @@
 jQuery(function ($) {
+  $(window).scroll(function () {
+      
+    scrollTop = $(window).scrollTop();
+
+    if (scrollTop >($('.headerImg').height()+ 200)) {
+        $('header').addClass('scrollNav');
+    }
+
+    else {
+        $('header').removeClass('scrollNav');
+    }
+
+});
 
     $('.successSlider').owlCarousel({
         autoplay: true,
