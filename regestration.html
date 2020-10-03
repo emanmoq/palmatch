@@ -24,24 +24,26 @@
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-expand-lg order-md-1">
-                    <div class="col-lg-6 col-md-4">
+
+                    <div class="col-lg-2 col-md-4">
                         <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
                     </div>
-                    <div class="col-lg-6 col-md-6 order-lg-2 order-md-3">
+                    <div class="col-lg-4 col-md-6 ">
 
 
                     </div>
-                    <div class="col-lg-6 col-md-8">
-                        <div class="signInSection">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="signInSection float-right">
                             <span>You have Acoount?</span> <a data-toggle="modal" data-target="#loginModal"
                                 class="loginLink">Login Please</a>
                             <a href="#" class="skip btn">Skip</a>
 
                         </div>
                     </div>
-                </nav>
-            </div>
 
+                </nav>
+
+            </div>
         </div>
 
     </header>
@@ -197,9 +199,9 @@
             <ul class="pager wizard">
                 <li class="next"><a class="joinBtn btn nextBtn" href="#">Next</a></li>
             </ul>
-          
+
         </form>
-     
+
     </div>
 </div>
 
@@ -267,18 +269,20 @@
         });
     </script>
     <script>
-	$(document).ready(function() {
-	  	$('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
-			var $total = navigation.find('li').length;
-			var $current = index+1;
-			var $percent = ($current/$total) * 100;
-			$('#rootwizard .progress-bar').css({width:$percent+'%'});
-		}});
-		window.prettyPrint && prettyPrint();
-        if ($(".tab-content tab-pane#tab4").hasClass("active")){
-            $(".pager.wizard").hide();
-        }
-	});
+        $(document).ready(function () {
+            $('#rootwizard').bootstrapWizard({
+                onTabShow: function (tab, navigation, index) {
+                    var $total = navigation.find('li').length;
+                    var $current = index + 1;
+                    var $percent = ($current / $total) * 100;
+                    $('#rootwizard .progress-bar').css({ width: $percent + '%' });
+                }
+            });
+            window.prettyPrint && prettyPrint();
+            if ($(".tab-content tab-pane#tab4").hasClass("active")) {
+                $(".pager.wizard").hide();
+            }
+        });
 
     </script>
 </body>

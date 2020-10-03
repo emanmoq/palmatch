@@ -74,6 +74,9 @@ header{
 .mobilenav{
     display: none;
 }
+.navbar{
+    padding: .5rem 0;
+}
 
 .navbar-brand{
     width:100%;
@@ -366,6 +369,7 @@ border:1px solid #E5E5E5;
     color:white;
     transition: all .3s;
     border:1px solid transparent;
+    line-height: 32px;;
 }
 .btn.joinBtn:hover{
     transition:all .3s;
@@ -373,7 +377,6 @@ border:1px solid #E5E5E5;
     color:#F5BB16;
     background: none;
     background-color:white;
-    margin:auto;
 }
 .getMembership a{
     
@@ -1325,6 +1328,13 @@ transition: all .5s;
     margin-bottom:50px;
     background-image: linear-gradient(45deg ,#0086AE,#00C4FF);
 }
+#innerHeader.profileHeader{
+    background-image: url("../images/profileHeader.png");
+    padding-bottom: 262px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 0;;
+}
 .quickSearch{
     padding:40px 30px;
     background-color:white;
@@ -1659,6 +1669,421 @@ margin:0;
     color:#202020
 }
 
+.chatBox{
+    border-radius: 25px;
+    background-color:white;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    height:634px;
+position: relative;
+}
+.chatHeader{
+    width:100%;
+    background-color: white;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.05);
+    padding:19px 24px;
+    text-align: center;
+}
+.chatHeader h5{
+    font-size: 1em;
+    font-family: Muli-SemiBold;
+    display: inline-block;
+}
+.status{
+    width:10px;
+    height:10px;
+    border-radius: 50%;;
+    margin-right: 5px;
+    display: inline-block;
+    text-align: center;
+}
+.available{
+    background-color: #3BFF83;
+}
+.options{
+    display: inline-block;
+  
+}
+.options a{
+    color:#8E8E8E;
+}
+.DiscoverHeader.chatTitle h4{
+font-size: 1.063em;;
+}
+.DiscoverHeader.chatTitle a{
+    font-size:0.750em;
+}
+.MsgBox{
+    padding:37px 24px;
+    height:100%;
+    position: relative;
+}
+.chatMsg{
+    width:60%;
+   
+    background-color: #EEEEEE;
+    border-radius: 20px;;
+    padding:11px 22px;
+    padding-bottom:16px;
+
+}
+.SenderImg{
+    width:63px;
+    height:63px;
+    border-radius: 50%;
+    margin-right:14px;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+}
+.msgTime{
+font-size:.875em;
+opacity: .33;
+margin-bottom:24px;
+}
+.senderMessage {
+
+margin-top:24px;
+}
+.chatMsg.sendMsg{
+    background-image: linear-gradient(45deg ,#0086AE ,#00C4FF );
+    color:white;
+}
+.chatForm{
+position: relative;
+    height:75px;
+    width: 96%;
+    height: 75px;
+    position: absolute;
+    left: 17px;
+    bottom: 74px;
+
+}
+.chatFormControl{
+    width:100%;
+    height:100%;
+    border-radius: 25px;
+    background-color: #F8F8F8;;
+
+}
+.likeBtn.chatSend{
+    position: absolute;
+    z-index: 222222222;
+    right:0;
+    top:15%;
+    width:48px;
+    height:48px;
+    font-size: 20px;
+}
+.btn.likeBtn.chatSend i {
+    line-height: 34px;
+}
+.innerPageTitle{
+    margin-top:36px;
+}
+.innerPageTitle h2{
+   font-size: 2.875em;
+   font-family: Muli-SemiBold;
+   color:white;
+   display: inline-block;
+}
+.navbarCont{
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.navbarCont .navbar-expand-lg{
+    padding-bottom: 20px;
+  
+}
+.profileBox{
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    width:100%;
+    padding-bottom:100px;
+    padding-top:0;
+}
+.profilePage{
+    margin-top:-16%;
+}
+.profilePic{
+    border-radius: 25px;
+    overflow:hidden;
+    position: relative;
+}
+.personalPic{
+    width:186px;
+    height:186px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin:auto;
+    margin-bottom:15px;
+}
+.userDesc h5{
+    font-size:1.875em;
+    font-family: Muli-Bold;
+}
+.userDesc{
+    margin: auto;
+    text-align: center;
+    margin-bottom:60px;
+
+}
+.userDesc span{
+    font-family: Muli-Bold;
+    font-size: 1.250em;
+    opacity: 50%;
+}
+.profileDetails{
+    margin-top:-100px;
+    position: relative;
+    padding:0 30px;
+}
+.quickSearch.profilesec{
+    padding:35px 30px;
+    margin-bottom:25px;
+}
+.quickSearch.profilesec h3{
+    opacity: 1;
+    margin-bottom:20px;
+}
+.quickSearch.profilesec p{
+    opacity: .5;
+    font-size:1.125em;
+    font-family: Muli-SemiBold;
+
+}
+.personImg.galleryImg:before{
+    display: none;
+}
+.GalleryImages.DiscoverHeader h4{
+    margin-top:35px;
+}
+.infoSec{
+    margin-bottom:20px;
+}
+.profilesec .infoSec:last-child{
+margin-bottom:0;
+}
+.infoSec p{
+    display: inline-block;
+    margin:0;;
+ 
+}
+.profilesec .infoSec p.leftSec{
+    opacity: 1;
+}
+.profilePic .options{ 
+position: absolute;
+left:12px;
+color:white;
+z-index: 222;
+top:22px;
+}
+.profilePic .options a{
+    color:white;
+}
+#userProfile .modal-content{
+    padding:0;
+}
+#userProfile .close{
+    position: absolute;
+    color:white;
+    opacity: 1;
+    right: 12px;
+    z-index: 222;
+    top: 22px;
+}
+#userProfile .modal-dialog{
+    max-width: 100%;
+    width: 1045px;
+}
+#userProfile .LikeSection{
+    margin: 0 auto;
+}
+.LikeSection .btn.likeBtn:hover{
+    background-image:none;
+    background-color: white;
+}
+.LikeSection .btn.likeBtn:hover i{
+    color:#FFE95D
+}
+.LikeSection .btn.likeBtn.blueBG:hover{
+    background-image:none;
+    background-color: white;
+}
+.LikeSection .btn.likeBtn.blueBG:hover i{
+    color: #0086AE;
+}
+.editProfileList li{
+padding:21px 28px;
+margin-bottom: 15px;
+border-radius: 25px;
+box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+}
+.editProfileList li:hover,.editProfileList li.active{
+    background: linear-gradient(45deg, #0086AE, #00C4FF);
+    transition: all .5s;
+}
+.editProfileList li:hover a ,.editProfileList li.active a{
+    color:white;
+}
+.editProfileList li:hover  a i ,.editProfileList li.active  a i{
+    background: none;
+    color:white;
+    -webkit-text-fill-color: white;
+    transition: all .5s;;
+    opacity: 1;
+}
+.editProfileList li:hover  a span ,.editProfileList li.active  a span{
+    color:white;
+
+    opacity: 1;
+}
+.editProfileList li a{
+    width:100%;
+    font-size:1.375em;
+    font-family: Muli-Bold;
+    
+}
+
+.editProfileList li a i{
+    margin-right:13.5;
+    font-size:32px;
+	background: -webkit-linear-gradient(45deg, #0086AE,#00C4FF) 0% 0% / 300% 300%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+transition: all .5s;;
+}
+.editProfileList li a span {
+    background: none;
+    font-size: 20px;
+    opacity: .5;
+    color:#202020
+}
+.changeProfileImg{
+    border-radius: 25px;
+    box-shadow: 0 6px 15px rgba(0, 150, 194, .22);
+    width:190px;
+    height:50px;
+    font-size: 1em;
+    line-height: 38px;
+    font-family: Muli-SemiBold;
+    margin-top:18px;
+    cursor: pointer;
+}
+.changeProfileImg:hover{
+    background: linear-gradient(45deg,#FFE95D, #FEB938);
+    color:white !important;
+}
+.changeProfileImg i{
+    opacity: .5;
+}
+.changeProfileImg:hover i{
+color:white;
+opacity: 1;
+}
+.userDesc input[type=file]{
+    position: absolute;
+    opacity: 0;
+    width:0;
+}
+.changeCoverPhoto{
+    width:100%;
+    height:182px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 150, 194, .22);
+    cursor: pointer;
+}
+.changeCoverPhoto i{
+    opacity: .5;
+    display: block;
+    margin:auto;
+    font-size:40px;
+    margin-top: 70px;
+}
+.userProfileInfo .formlist{
+    border:0;
+    padding:0;
+    margin-bottom:25px;
+}
+.userProfileInfo .formlist:last-child{
+    margin-bottom: 0;;
+}
+.userProfileInfo .form-control,.userProfileInfo .selectric-wrapper{
+    width: 100%;;
+    height: 55px;
+    border-radius: 58px;
+    border: 1px solid #E5E5E5;
+    background-color: #F3F3F3;
+}
+.userProfileInfo .checkboxStyle{
+    background-color: #F3F3F3;
+    padding: 10px 19px;
+    height:44px;
+    line-height: 21px;
+    font-size:1.1em;
+    font-family: Muli-SemiBold;
+}
+.userProfileInfo .btn.SignIn.More{
+    background: linear-gradient(45deg, #0086AE, #00C4FF);
+    color:white !important;
+    width:100px;
+    height:44px;
+    line-height: 30px;;
+    box-shadow: 0 6px 15px rgba(0, 150, 194, .22);
+}
+.userProfileInfo .btn.SignIn.More:hover{
+    background: none;
+    color: #222222 !important
+}
+.editProfileBio textarea{
+background-color:rgba(243, 243, 243, .42) ;
+padding:28px 20px;
+border-radius: 25px;
+border:1px solid #E5E5E5;
+height:375px;
+width:100%;
+resize: none;
+}
+
+.passwordForm label{
+font-size:1em;
+font-family: Muli-Bold;
+margin-bottom:10px;
+}
+
+.passwordForm .form-control{
+    background-color: #F3F3F3;
+}
+.passwordForm .save{
+    display: block;
+    margin:auto;
+    margin-top:43px;
+}
+.profileDetails.passwordpage{
+    margin-top:-185px;
+}
+.lockImg{
+    width:130px;
+    margin:auto;
+    margin-bottom:20px;
+}
+.passwordForm h6{
+    font-size:1.625em;
+    font-family: Muli-Bold;
+    margin-bottom:22px;
+    text-align: center;
+
+}
+.passwordForm span{
+    font-size: 1em;
+    font-family: Muli-Bold;
+    opacity: .5;
+    margin-bottom: 30px;;
+    display: block;
+    text-align: center;
+
+}
 /*-------------Responsive --------------*/
 
 /*-------------Small Screen --------------*/
@@ -1853,7 +2278,69 @@ text-align: left;
 .send{
     top:63%;
 }
+.SenderImg {
+    width: 50px;
+    height: 50px;
 }
+.chatMsg {
+    width: 78%;
+    padding:11px;}
+
+.chatTitle {
+    margin-top:20px;
+}
+.chatForm {
+    width: 93%;
+    height: 65px;}
+    #innerHeader.profileHeader {
+        padding-bottom: 140px;
+        background-size: cover;}
+
+    header#innerHeader.profileHeader{
+background-color: transparent;
+height: auto;
+        }
+        .profilePage{
+            margin-top:-35%;
+        }
+        .personalPic {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 8px;
+        }
+        .profileDetails{
+            margin-top:-40px;
+            padding:0 10px;
+        }
+.userDesc{
+    margin-bottom:30px;
+}
+.profileBox{
+    padding-bottom:35px;
+}
+.profilePic{
+    height:150px;
+}
+.profilePic img{
+    height:100%;
+}
+.innerPageTitle h2 {
+    font-size: 1.875em;}
+    .profileDetails.passwordpage {
+        margin-top: -127px;
+    }
+    .innerPageTitle .btn.joinBtn {
+
+        float: none !important;
+        margin: auto;
+        text-align: center;
+        display: block;
+        margin-top: 20px;
+    }
+
+
+}
+
 /*-------------Ipad Screen --------------*/
 
 @media(min-width:768px)and (max-width:1023px){
@@ -1996,6 +2483,12 @@ body{
 .quickSearch{
     margin-bottom:50px;
 }
+.chatTitle {
+    margin-top:20px;
+}
+.discoverFooter{
+    margin-top:50px;
+}
 /***        #innerHeader .signInSection{
 float: none;
 margin-top:20px;
@@ -2008,8 +2501,22 @@ background-image: linear-gradient(45deg ,#0086AE,#00C4FF);
 top:140px;
 z-index: 222222222222222222222222;
         }**/
-        
+        #innerHeader.profileHeader {
+            padding-bottom: 140px;
+            background-size: cover;}
+    
+        header#innerHeader.profileHeader{
+    background-color: transparent;
+    height: auto;
+            }  
+            .innerPageTitle .btn.joinBtn{
+            float:right !important
+            }
+            .profileDetails.passwordpage {
+                margin-top: -116px;
+            } 
 }
+
 @media(min-width:1024px)and (max-width:1150px){
     .mobilenav{
         display: none;
@@ -2023,5 +2530,8 @@ z-index: 222222222222222222222222;
     .navbar-expand-lg .navbar-nav .nav-item {
         padding-left: 5px;
         padding-right: 5px;}
+        .profilePage{
+            margin-top:-25%;
+        }
 
 }
