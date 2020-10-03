@@ -2330,14 +2330,18 @@ height: auto;
         margin-top: -127px;
     }
     .innerPageTitle .btn.joinBtn {
-
-        float: none !important;
-        margin: auto;
+      
         text-align: center;
         display: block;
-        margin-top: 20px;
+        width: 130px;
+        height: 40px;
+        line-height: 21px;
     }
-
+    .editProfileList{
+        margin-bottom:40px;
+    }
+    .editProfileList li a {
+        font-size: 1.075em;}
 
 }
 
