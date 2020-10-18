@@ -2084,6 +2084,11 @@ margin-bottom:10px;
     text-align: center;
 
 }
+.modalForm .form-group textarea.form-control{
+    height:150px;
+    border-radius: 10px;
+    resize: none;
+}
 /*-------------Responsive --------------*/
 
 /*-------------Small Screen --------------*/
