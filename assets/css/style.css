@@ -1914,39 +1914,39 @@ top:22px;
 .LikeSection .btn.likeBtn.blueBG:hover i{
     color: #0086AE;
 }
-.editProfileList li{
+.editProfileList a.nav-link{
 padding:21px 28px;
 margin-bottom: 15px;
 border-radius: 25px;
 box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
 }
-.editProfileList li:hover,.editProfileList li.active{
+.editProfileList .nav-link:hover,.editProfileList .nav-link.active{
     background: linear-gradient(45deg, #0086AE, #00C4FF);
     transition: all .5s;
 }
-.editProfileList li:hover a ,.editProfileList li.active a{
+.editProfileList .nav-link:hover ,.editProfileList .nav-link.active {
     color:white;
 }
-.editProfileList li:hover  a i ,.editProfileList li.active  a i{
+.editProfileList .nav-link:hover  i ,.editProfileList .nav-link.active  i{
     background: none;
     color:white;
     -webkit-text-fill-color: white;
     transition: all .5s;;
     opacity: 1;
 }
-.editProfileList li:hover  a span ,.editProfileList li.active  a span{
+.editProfileList .nav-link:hover  span ,.editProfileList .nav-link.active  span{
     color:white;
 
     opacity: 1;
 }
-.editProfileList li a{
+.editProfileList .nav-link a{
     width:100%;
     font-size:1.375em;
     font-family: Muli-Bold;
     
 }
 
-.editProfileList li a i{
+.editProfileList .nav-link i{
     margin-right:13.5;
     font-size:32px;
 	background: -webkit-linear-gradient(45deg, #0086AE,#00C4FF) 0% 0% / 300% 300%;
@@ -1954,7 +1954,7 @@ box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
 -webkit-text-fill-color: transparent;
 transition: all .5s;;
 }
-.editProfileList li a span {
+.editProfileList  a.nav-link span {
     background: none;
     font-size: 20px;
     opacity: .5;
