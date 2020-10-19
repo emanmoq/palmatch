@@ -360,7 +360,7 @@ border:1px solid #E5E5E5;
 .selectric-open .selectric-items{
     border-radius: 12px;;
 }
-.joinBtn{
+.btn.joinBtn{
     width:190px;
     height:50px;
     border-radius: 58px;
@@ -369,14 +369,9 @@ border:1px solid #E5E5E5;
     color:white;
     transition: all .3s;
     border:1px solid transparent;
-    line-height: 32px;  
-      display: inline-block;
-    font-weight: 400;
-    color: #212529;
-    text-align: center;
-    vertical-align: middle;
+    line-height: 32px;;
 }
-.joinBtn:hover{
+.btn.joinBtn:hover{
     transition:all .3s;
  border:1px solid #F5BB16;
     color:#F5BB16;
@@ -955,6 +950,9 @@ width:100%;
 border:1px solid transparent;
 box-shadow: 0 6px 15px rgba(0, 150, 194, .22);
 line-height: 31px;;
+display: block;
+width: 100%;
+
 }
 .btn.joinBtn.modalLoginBtn:hover{
     border:1px solid #F5BB16;   
