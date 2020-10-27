@@ -241,8 +241,23 @@
                                 <form action="">
                                     <label class="btn changeProfileImg" for="changeImg"><i class="fas fa-camera"></i>
                                         Change</label>
-                                    <input type="file" id="changeImg">
+                                    <input type="file" id="changeImg" onchange="readURL(this)">
                                 </form>
+                                <script>
+                                    function readURL(input) {
+                                        var $input = input;
+                                        if (input.files && input.files[0]) {
+                                            var reader = new FileReader();
+                                            reader.onload = function (e) {
+                                                $($input).parent().parent().find("img")
+                                                    .attr('src', e.target.result)
+                                              
+        
+                                            };
+                                            reader.readAsDataURL(input.files[0]);
+                                        }
+                                    }
+                                </script>
 
                             </div>
                         </div>
@@ -250,9 +265,29 @@
                             <div class="userDesc">
                                 <form action="">
                                     <label class="changeCoverPhoto" for="changeCover"><i
-                                            class="fas fa-image"></i></label>
-                                    <input type="file" id="changeCover">
+                                            class="fas fa-image"></i>
+                                            <input type="file" id="changeCover" onchange="readURL2(this)">
+                                            <img src="#" alt="" style="display: none;"></label>
+                                  
+                                
                                 </form>
+                                <script>
+                                    function readURL2(input) {
+                                        var $input = input;
+                                        if (input.files && input.files[0]) {
+                                            var reader = new FileReader();
+                                            reader.onload = function (e) {
+                                                $($input).next()
+                                                    .attr('src', e.target.result)
+                                                    .css("display","block");
+                                                $(".fas.fa-image").css("display","none")
+                                              
+        
+                                            };
+                                            reader.readAsDataURL(input.files[0]);
+                                        }
+                                    }
+                                </script>
 
                             </div>
                         </div>
