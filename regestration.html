@@ -178,18 +178,43 @@
                 <div class="tab-pane" id="tab4">
                     <div class="form-group uploadformGroup">
                         <label> Profile Photo </label>
-                        <input type="file" id="uploadPhoto">
+
                         <Label for="uploadPhoto" class="uploadImg">
-                            <img src="assets/images/uploadImg.png" alt="">
+                            <input type="file" id="uploadPhoto" alt="" onchange="readURL(this);">
+                            <img id="personalImg" src="#" alt="your image" style="display: none;" />
+                            <img src="assets/images/uploadImg.png" id="defultPersonalImg">
                         </Label>
+
+                  
                     </div>
                     <div class="form-group uploadformGroup">
                         <label> Profile Cover </label>
-                        <input type="file" id="uploadPhotoCover">
-                        <Label for="uploadPhoto" class="uploadCover">
-                            <div class="innerImgCover"><img src="assets/images/img.png" alt=""></div>
+                        <Label for="uploadPhotoCover" class="uploadCover">
+                            <input type="file" id="uploadPhotoCover" onchange="readURL(this);">
+                            <img id="coverPhoto" src="#" alt="your image" style="display: none;" />
+
+                            <div class="innerImgCover">
+                                <img class="defulatCoverImg" src="assets/images/img.png" alt="">
+                            </div>
+
                         </Label>
 
+                        <script>
+                            function readURL(input) {
+                                var $input = input;
+                                if (input.files && input.files[0]) {
+                                    var reader = new FileReader();
+                                    reader.onload = function (e) {
+                                        $($input).next()
+                                            .attr('src', e.target.result)
+                                        .css("display", "block");
+                                        $($input).next().next().css("display", "none");
+
+                                    };
+                                    reader.readAsDataURL(input.files[0]);
+                                }
+                            }
+                        </script>
                     </div>
                     <a href="#" class="btn joinBtn  nextBtn" type="submit">Finish</a>
 
@@ -285,6 +310,7 @@
         });
 
     </script>
+
 </body>
 
 </html>

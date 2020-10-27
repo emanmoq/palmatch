@@ -1264,6 +1264,8 @@ position: absolute;
       width:109px;
       height: 109px;
       margin:auto;
+      border-radius: 50%;
+      overflow: hidden;;
   }
 .uploadCover{
     width:100%;
@@ -1273,6 +1275,7 @@ position: absolute;
     border:1px solid rgba(255,255,255,.61);
     text-align: center;
     display: block;
+    overflow: hidden;
 
 }
 .innerImgCover{
