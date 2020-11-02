@@ -31,8 +31,8 @@
 </head>
 
 <body id="profileBody">
-     <!--Start Header-->
-     <header id="innerHeader" class="profileHeader">
+    <!--Start Header-->
+    <header id="innerHeader" class="profileHeader">
         <div class="navbarCont">
             <div class="container">
                 <div class="justify-content-center">
@@ -230,6 +230,7 @@
                                 </div>
                                 <h5> Ibrahim Jalal</h5>
                                 <span>28 Years Old.UK</span>
+                                <p> <i class="fas fa-eye"></i> 2,100</p>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
@@ -284,12 +285,39 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-md-6">
-                                            <div class="personImg galleryImg">
-                                                <a href="#">
-                                                    <img src="assets/images/g6.png" alt="">
 
-                                                </a>
-                                            </div>
+                                            <a href="#">
+                                                <img src="assets/images/g6.png" alt="">
+
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                        
+                                            <form action="">
+                                               
+                                                <label class="addImg" for="addImg">
+                                                    <input type="file" id="addImg" onchange="readURL(this)">
+                                                    <img src="#" alt="" style="display: none;">
+                                                    <img src="assets/images/photos.png" class="addimgIcon" alt="">
+                                                    <span>Add Photo</span>
+                                                </label>
+                                            </form>
+                                            <script>
+                                                function readURL(input) {
+                                                    var $input = input;
+                                                    if (input.files && input.files[0]) {
+                                                        var reader = new FileReader();
+                                                        reader.onload = function (e) {
+                                                            $($input).next()
+                                                                .attr('src', e.target.result).css("display","block");
+                                                                $(".addimgIcon").css("display","none")
+
+
+                                                        };
+                                                        reader.readAsDataURL(input.files[0]);
+                                                    }
+                                                }
+                                            </script>
                                         </div>
 
                                     </div>
@@ -328,6 +356,41 @@
                                     <div class="quickSearch profilesec">
                                         <h3>Looking For</h3>
                                         <p>Marrige</p>
+                                    </div>
+                                    <div class="quickSearch profilesec">
+                                        <h3>Social Links</h3>
+                                       <ul class="profileScoial">
+                                           <li>
+                                               <a href="#"> 
+                                                   <img src="assets/images/facebook.png" alt="">
+                                               </a>
+                                           </li>
+                                           <li>
+                                            <a href="#"> 
+                                                <img src="assets/images/twitter.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> 
+                                                <img src="assets/images/insta.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> 
+                                                <img src="assets/images/youtube.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> 
+                                                <img src="assets/images/google-plus.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> 
+                                                <img src="assets/images/tiktok.png" alt="">
+                                            </a>
+                                        </li>
+                                       </ul>
                                     </div>
                                 </div>
                             </div>
