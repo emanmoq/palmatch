@@ -2168,7 +2168,9 @@ margin-bottom:10px;
 .fa-tiktok:before{
     content: "\e07b";
 }
-
+.personImg.galleryImg{
+    height: 170px;
+}
 
 /*-------------Responsive --------------*/
 

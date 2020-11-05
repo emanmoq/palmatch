@@ -443,6 +443,15 @@
                         <div class="tab-pane fade" id="Album-photo" role="tabpanel" aria-labelledby="Album-tab">
                             <div class="row">
                                 <div class="col-lg-4 col-md-6">
+                                    <div class="personImg galleryImg">
+                                        <a href="#">
+                                            <img src="assets/images/g1.png" alt="">
+
+                                        </a>
+                                    </div>
+              
+                                </div>
+                                <div class="col-lg-4 col-md-6">
                                     <form action="">
 
                                         <label class="addImg editProfileImg" for="addImg">
@@ -466,7 +475,7 @@
                                                 };
                                                 reader.readAsDataURL(input.files[0]);
                                             }
-                                            $(this).append('<input type="file" name="file[]"/>')
+                                            $("#addImg").append('<input type="file" name="file[]"/>')
                                         }
                                     </script>
                                 </div>
