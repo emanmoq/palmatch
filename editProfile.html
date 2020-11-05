@@ -223,10 +223,15 @@
                         <a class="nav-link" id="Determinants-tab" data-toggle="pill" href="#Determinants" role="tab"
                             aria-controls="Determinants" aria-selected="false"><i class="fas fa-image"></i>Determinants
                             <span class="fas fa-chevron-right float-right"></span></a>
-                        <a class="nav-link" id="BIO-tab" data-toggle="pill" href="#BIO"
-                            role="tab" aria-controls="BIO" aria-selected="false"><i
-                                class="fas fa-exclamation-circle"></i>Resume (BIO) <span
+                        <a class="nav-link" id="BIO-tab" data-toggle="pill" href="#BIO" role="tab" aria-controls="BIO"
+                            aria-selected="false"><i class="fas fa-exclamation-circle"></i>Resume (BIO) <span
                                 class="fas fa-chevron-right float-right"></span></a>
+                        <a class="nav-link" id="social-tab" data-toggle="pill" href="#social" role="tab"
+                            aria-controls="social" aria-selected="false"><i class="fas fa-link"></i>Social Links <span
+                                class="fas fa-chevron-right float-right"></span></a>
+                        <a class="nav-link" id="Album-tab" data-toggle="pill" href="#Album-photo" role="tab"
+                            aria-controls="Album" aria-selected="false"><i class="fas fa-image"></i> Album
+                            <span class="fas fa-chevron-right float-right"></span></a>
 
                     </div>
                 </div>
@@ -251,8 +256,8 @@
                                             reader.onload = function (e) {
                                                 $($input).parent().parent().find("img")
                                                     .attr('src', e.target.result)
-                                              
-        
+
+
                                             };
                                             reader.readAsDataURL(input.files[0]);
                                         }
@@ -264,12 +269,11 @@
                         <div class="tab-pane fade" id="cover-photo" role="tabpanel" aria-labelledby="cover-photo-tab">
                             <div class="userDesc">
                                 <form action="">
-                                    <label class="changeCoverPhoto" for="changeCover"><i
-                                            class="fas fa-image"></i>
-                                            <input type="file" id="changeCover" onchange="readURL2(this)">
-                                            <img src="#" alt="" style="display: none;"></label>
-                                  
-                                
+                                    <label class="changeCoverPhoto" for="changeCover"><i class="fas fa-image"></i>
+                                        <input type="file" id="changeCover" onchange="readURL2(this)">
+                                        <img src="#" alt="" style="display: none;"></label>
+
+
                                 </form>
                                 <script>
                                     function readURL2(input) {
@@ -279,10 +283,10 @@
                                             reader.onload = function (e) {
                                                 $($input).next()
                                                     .attr('src', e.target.result)
-                                                    .css("display","block");
-                                                $(".fas.fa-image").css("display","none")
-                                              
-        
+                                                    .css("display", "block");
+                                                $(".fas.fa-image").css("display", "none")
+
+
                                             };
                                             reader.readAsDataURL(input.files[0]);
                                         }
@@ -399,14 +403,73 @@
                         <div class="tab-pane fade" id="BIO" role="tabpanel" aria-labelledby="BIO-tab">
                             <div class="quickSearch profilesec editProfileBio">
                                 <h3>Resume (BIO)</h3>
-                            <form>  <textarea name="" id="">Sed nisi nihil recusandae quis et et aliquam. Aliquid molestiae quos delectus
+                                <form> <textarea name="" id="">Sed nisi nihil recusandae quis et et aliquam. Aliquid molestiae quos delectus
                                 deleniti enim. Ea quia laborum mollitia sunt autem. Distinctio molestiae nam
                                 aperiam et</textarea></form>
                             </div>
                         </div>
+                        <div class="tab-pane fade" id="social" role="tabpanel" aria-labelledby="social-tab">
+                            <div class="quickSearch">
+                                <form action="" class="heroForm  userProfileInfo">
+                                    <div class="form-group clearfix">
+                                        <label class="form-group-title" for=""> Facebook </label>
+                                        <input type="text" class="form-control" placeholder="Http://">
+
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="form-group-title" for=""> Instagram </label>
+                                        <input type="text" class="form-control" placeholder="Http://">
+
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="form-group-title" for=""> Twitter </label>
+                                        <input type="text" class="form-control" placeholder="Http://">
+
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="form-group-title" for=""> Google </label>
+                                        <input type="text" class="form-control" placeholder="Http://">
+
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="form-group-title" for=""> TikTok </label>
+                                        <input type="text" class="form-control" placeholder="Http://">
+
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="Album-photo" role="tabpanel" aria-labelledby="Album-tab">
+                            <form action="">
+                                               
+                                <label class="addImg" for="addImg">
+                                    <input type="file" id="addImg" onchange="readURL(this)">
+                                    <img src="#" alt="" style="display: none;">
+                                    <img src="assets/images/photos.png" class="addimgIcon" alt="">
+                                    <span>Add Photo</span>
+                                </label>
+                            </form>
+                            <script>
+                                function readURL(input) {
+                                    var $input = input;
+                                    if (input.files && input.files[0]) {
+                                        var reader = new FileReader();
+                                        reader.onload = function (e) {
+                                            $($input).next()
+                                                .attr('src', e.target.result).css("display","block");
+                                                $(".addimgIcon").css("display","none")
+
+
+                                        };
+                                        reader.readAsDataURL(input.files[0]);
+                                    }
+                                }
+                            </script>
+                        </div>
                     </div>
                 </div>
-         
+
             </div>
 
         </div>
