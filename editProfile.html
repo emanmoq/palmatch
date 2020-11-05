@@ -441,31 +441,36 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="Album-photo" role="tabpanel" aria-labelledby="Album-tab">
-                            <form action="">
-                                               
-                                <label class="addImg" for="addImg">
-                                    <input type="file" id="addImg" onchange="readURL(this)">
-                                    <img src="#" alt="" style="display: none;">
-                                    <img src="assets/images/photos.png" class="addimgIcon" alt="">
-                                    <span>Add Photo</span>
-                                </label>
-                            </form>
-                            <script>
-                                function readURL(input) {
-                                    var $input = input;
-                                    if (input.files && input.files[0]) {
-                                        var reader = new FileReader();
-                                        reader.onload = function (e) {
-                                            $($input).next()
-                                                .attr('src', e.target.result).css("display","block");
-                                                $(".addimgIcon").css("display","none")
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <form action="">
+
+                                        <label class="addImg editProfileImg" for="addImg">
+                                            <input type="file" id="addImg" onchange="readURL(this)">
+                                            <img src="#" alt="" style="display: none;">
+                                            <img src="assets/images/photos.png" class="addimgIcon" alt="">
+                                            <span>Add Photo</span>
+                                        </label>
+                                    </form>
+                                    <script>
+                                        function readURL(input) {
+                                            var $input = input;
+                                            if (input.files && input.files[0]) {
+                                                var reader = new FileReader();
+                                                reader.onload = function (e) {
+                                                    $($input).next()
+                                                        .attr('src', e.target.result).css("display", "block");
+                                                    $(".addimgIcon").css("display", "none")
 
 
-                                        };
-                                        reader.readAsDataURL(input.files[0]);
-                                    }
-                                }
-                            </script>
+                                                };
+                                                reader.readAsDataURL(input.files[0]);
+                                            }
+                                            $(this).append('<input type="file" name="file[]"/>')
+                                        }
+                                    </script>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

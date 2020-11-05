@@ -2132,7 +2132,44 @@ margin-bottom:10px;
     height:57px;
     border-radius: 50%;
     overflow: hidden;
+    text-align: center;
 }
+.profileScoial li a{
+    display: block;
+}
+.profileScoial li i{
+    color:white;
+    font-size: 30px;
+    line-height: 56px;
+}
+
+.facebookIcon{
+    background-color: #3B5998;
+}
+.twitterIcon{
+    background-color: #55ACEE;
+}
+.instaIcon{
+    background-image: linear-gradient(to right top, #ffc107, #ffab03, #ff950f, #ff7e1c, #fd6628, #fd4f38, #f93647, #f21556, #e8006e, #d70086, #be049d, #9c27b0);
+}
+.googleplusIcon{
+    background-color: #DC4E41;
+
+}
+.youtubeIcon{
+    background-color: #F44336;
+}
+.tiktokIcon{
+    background-color:#F2F2F2;
+}
+.fa-tiktok{
+    position: relative;
+}
+.fa-tiktok:before{
+    content: "\e07b";
+}
+
+
 /*-------------Responsive --------------*/
 
 /*-------------Small Screen --------------*/
