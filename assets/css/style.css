@@ -2172,6 +2172,7 @@ margin-bottom:10px;
     height: 170px;
 }
 
+
 /*-------------Responsive --------------*/
 
 /*-------------Small Screen --------------*/
@@ -2200,6 +2201,7 @@ margin-bottom:10px;
     }
     .mobilenav{
         display: block;
+        padding:0 15px;
     }
     .navbar-brand{
         width: 40%;
@@ -2463,6 +2465,7 @@ height: auto;
     }
     .mobilenav{
         display: block;
+        padding:0 15px;
     }
     .navbar-brand{
         width: 40%;
@@ -2607,6 +2610,9 @@ z-index: 222222222222222222222222;
             .profileDetails.passwordpage {
                 margin-top: -116px;
             } 
+    .send{
+        top:64%;
+    }
 }
 
 @media(min-width:1024px)and (max-width:1150px){
