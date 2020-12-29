@@ -71,6 +71,10 @@ header{
     transition: all .5s;;
     animation:sticky;
 }
+.btn:focus{
+    border:0;
+    box-shadow: none;
+}
 .mobilenav{
     display: none;
 }
@@ -1995,6 +1999,7 @@ opacity: 1;
     position: absolute;
     opacity: 0;
     width:0;
+    left:0;
 }
 .changeCoverPhoto{
     width:100%;
@@ -2423,7 +2428,7 @@ height: auto;
       
         text-align: center;
         display: block;
-        width: 130px;
+        width: 123px;
         height: 40px;
         line-height: 21px;
     }
@@ -2605,7 +2610,8 @@ z-index: 222222222222222222222222;
     height: auto;
             }  
             .innerPageTitle .btn.joinBtn{
-            float:right !important
+            float:right !important;
+            width:123px;
             }
             .profileDetails.passwordpage {
                 margin-top: -116px;
@@ -2616,6 +2622,9 @@ z-index: 222222222222222222222222;
 }
 
 @media(min-width:1024px)and (max-width:1150px){
+    #innerHeader.profileHeader{
+        padding-bottom: 140px;;
+    }
     .mobilenav{
         display: none;
     }
@@ -2631,5 +2640,36 @@ z-index: 222222222222222222222222;
         .profilePage{
             margin-top:-25%;
         }
+        .SignIn.btn{
+            width:110px
+        }
+        .send{
+            top:65%;
+        }
 
+}
+@media(min-width:1400px){
+    .container {
+        max-width: 1370px;
+      }
+      .heroSection{
+          padding-bottom:470px
+      }
+      .owl-stage-outer { 
+        overflow: visible;
+        padding:20px;
+        }
+        
+     .owl-item {
+           opacity: 0;
+           transition: opacity .2s;
+        }
+     .owl-item.active {
+          opacity: 1;
+        }
+        #innerHeader.profileHeader {
+            padding-bottom: 409px;
+            background-size: cover;
+        }
+      
 }
